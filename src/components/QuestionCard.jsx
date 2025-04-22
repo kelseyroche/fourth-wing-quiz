@@ -1,5 +1,9 @@
+
+
 // import React from 'react';
 // import AnswerButton from './AnswerButton';
+// import '../App.css'; // Make sure to import your styles
+
 
 // const QuestionCard = ({ question, onAnswer }) => (
 //   <div>
@@ -14,15 +18,15 @@
 //   </div>
 // );
 
-// // Ensure this line is present
 // export default QuestionCard;
 
 import React from 'react';
 import AnswerButton from './AnswerButton';
+import '../App.css';
 
 const QuestionCard = ({ question, onAnswer }) => (
-  <div>
-    <h2>{question.text}</h2>
+  <div className="container">
+    <h2 className="bold-text">{question.text}</h2>
     <ul>
       {question.answers.map((answer, index) => (
         <li key={index}>

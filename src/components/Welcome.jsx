@@ -1,30 +1,44 @@
-// import React from "react";
 
-// const Welcome = ({ onStart }) => {
+// import React from "react";
+// import { motion } from "framer-motion";
+// import { useNavigate } from "react-router-dom";
+// import '../App.css'; // Ensure you're importing your styles
+// import dragonLogo from '../assets/dragon_logo.png'; // Import the logo
+
+// const Welcome = () => {
+//   const navigate = useNavigate();
+
 //   return (
-//     <div style={styles.container}>
-//       <h1 style={styles.title}>Which Dragon Will Choose You?</h1>
+//     <motion.div
+//       className="welcome-container"
+//       initial={{ opacity: 0, y: 30 }}
+//       animate={{ opacity: 1, y: 0 }}
+//       exit={{ opacity: 0 }}
+//       transition={{ duration: 0.8 }}
+//     >
+//       {/* Add your logo image here */}
+//       <img src={dragonLogo} alt="Dragon Logo" style={styles.logo} />
+
+//       <h1 style={styles.title}>WELCOME TO THRESHING</h1>
 //       <p style={styles.subtitle}>
-//         Take the Fourth Wing personality quiz to find out your dragon and tail type.
+//         Congrats on making it this far, first year. Let's find out which dragon will choose you.
 //       </p>
-//       <button style={styles.button} onClick={onStart}>
+//       <motion.button
+//         whileHover={{ scale: 1.05 }}
+//         whileTap={{ scale: 0.95 }}
+//         style={styles.button}
+//         onClick={() => navigate("/quiz")}
+//       >
 //         Start Quiz
-//       </button>
-//     </div>
+//       </motion.button>
+//     </motion.div>
 //   );
 // };
 
 // const styles = {
-//   container: {
-//     height: "100vh",
-//     display: "flex",
-//     flexDirection: "column",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     background: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
-//     color: "#fff",
-//     textAlign: "center",
-//     padding: "0 2rem",
+//   logo: {
+//     width: '150px',   // Adjust size as needed
+//     marginBottom: '20px', // Space between logo and title
 //   },
 //   title: {
 //     fontSize: "2.5rem",
@@ -43,7 +57,7 @@
 //     fontSize: "1rem",
 //     borderRadius: "8px",
 //     cursor: "pointer",
-//     transition: "transform 0.2s ease, box-shadow 0.2s ease",
+//     transition: "all 0.3s ease",
 //   },
 // };
 
@@ -52,21 +66,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import '../App.css'; // Ensure you're importing your styles
+import dragonLogo from '../assets/dragon_logo.png'; // Import the logo
 
 const Welcome = () => {
   const navigate = useNavigate();
 
   return (
     <motion.div
+      className="welcome-container"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
-      style={styles.container}
     >
-      <h1 style={styles.title}>Which Dragon Will Choose You?</h1>
-      <p style={styles.subtitle}>
-        Take the Fourth Wing personality quiz to discover your dragon and tail type.
+      <img src={dragonLogo} alt="Dragon Logo" style={styles.logo} />
+
+      <h1 className="bold-text" style={styles.title}>WELCOME TO THRESHING</h1>
+      <p className="regular-text" style={styles.subtitle}>
+        Congrats on making it this far, first year. Let's find out which dragon will choose you.
       </p>
       <motion.button
         whileHover={{ scale: 1.05 }}
@@ -81,20 +99,12 @@ const Welcome = () => {
 };
 
 const styles = {
-  container: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
-    color: "#fff",
-    textAlign: "center",
-    padding: "0 2rem",
+  logo: {
+    width: '150px',
+    marginBottom: '20px',
   },
   title: {
     fontSize: "2.5rem",
-    fontWeight: "600",
     marginBottom: "1rem",
   },
   subtitle: {
@@ -103,7 +113,7 @@ const styles = {
     maxWidth: "500px",
   },
   button: {
-    backgroundColor: "#ffc107",
+    backgroundColor: "#cdaf86",
     border: "none",
     padding: "0.8rem 2rem",
     fontSize: "1rem",
