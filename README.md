@@ -25,25 +25,6 @@ Inspired by Fourth Wing by Rebecca Yarros, this app combines fandom fun with fro
 	•	CSS (custom styling)
 	•	JavaScript (logic-heavy trait handling)
 
-📁 Folder Structure (Simplified)
-
-├── public/
-├── src/
-│   ├── assets/
-│   │   ├── red/
-│   │   │   ├── clubtail.png
-│   │   │   └── ...
-│   │   └── gold/
-│   ├── components/
-│   │   ├── Quiz.jsx
-│   │   ├── Result.jsx
-│   │   └── QuestionCard.jsx
-│   ├── data/
-│   │   ├── questions.js
-│   │   └── traitMaps.js
-│   ├── App.jsx
-│   └── main.jsx
-└── README.md
 
 🚀 Getting Started
 
