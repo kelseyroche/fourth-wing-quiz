@@ -29,19 +29,19 @@ Inspired by Fourth Wing by Rebecca Yarros, this app combines fandom fun with fro
 🚀 Getting Started
 
 To run the project locally:
-	1.	Clone the repo
-
+1. Clone the repo
+```
 git clone https://github.com/yourusername/fourth-wing-dragon-quiz.git
+```
+2. Install Dependencies
 
-
-	2.	Install dependencies
-
+```
 npm install
-
-
-	3.	Start the dev server
-
+```
+3. Start the dev server
+```
 npm run dev
+```
 
 🛠 Customization
 
@@ -64,5 +64,3 @@ Built by Kelsey Roche
 	•	Inspired by Fourth Wing by Rebecca Yarros
 	•	Dragon art created by me using Canva
 	•	Animations powered by Framer Motion
-
-Let me know if you’d like a shorter version or want to include deployment instructions for something like Render!
