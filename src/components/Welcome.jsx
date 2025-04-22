@@ -1,4 +1,5 @@
 
+
 // import React from "react";
 // import { motion } from "framer-motion";
 // import { useNavigate } from "react-router-dom";
@@ -16,11 +17,10 @@
 //       exit={{ opacity: 0 }}
 //       transition={{ duration: 0.8 }}
 //     >
-//       {/* Add your logo image here */}
 //       <img src={dragonLogo} alt="Dragon Logo" style={styles.logo} />
 
-//       <h1 style={styles.title}>WELCOME TO THRESHING</h1>
-//       <p style={styles.subtitle}>
+//       <h1 className="bold-text" style={styles.title}>WELCOME TO THRESHING</h1>
+//       <p className="regular-text" style={styles.subtitle}>
 //         Congrats on making it this far, first year. Let's find out which dragon will choose you.
 //       </p>
 //       <motion.button
@@ -37,12 +37,11 @@
 
 // const styles = {
 //   logo: {
-//     width: '150px',   // Adjust size as needed
-//     marginBottom: '20px', // Space between logo and title
+//     width: '150px',
+//     marginBottom: '20px',
 //   },
 //   title: {
 //     fontSize: "2.5rem",
-//     fontWeight: "600",
 //     marginBottom: "1rem",
 //   },
 //   subtitle: {
@@ -51,7 +50,7 @@
 //     maxWidth: "500px",
 //   },
 //   button: {
-//     backgroundColor: "#ffc107",
+//     backgroundColor: "#cdaf86",
 //     border: "none",
 //     padding: "0.8rem 2rem",
 //     fontSize: "1rem",
@@ -116,10 +115,12 @@ const styles = {
     backgroundColor: "#cdaf86",
     border: "none",
     padding: "0.8rem 2rem",
-    fontSize: "1rem",
+    fontSize: "1.2rem", // Slightly larger font size for better visibility
     borderRadius: "8px",
     cursor: "pointer",
     transition: "all 0.3s ease",
+    fontFamily: 'Optimus Princeps', // Apply the imported font
+    color: '#000', // Ensure there's enough contrast for readability
   },
 };
 
