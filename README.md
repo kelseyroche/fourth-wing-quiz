@@ -11,19 +11,20 @@ Ever wondered what kind of dragon would bond with you at Basgiath War College? T
 Inspired by Fourth Wing by Rebecca Yarros, this app combines fandom fun with front-end development. Users answer a series of questions, and the app analyzes their traits to generate a personalized result: a dragon who would (hypothetically) bond with them.
 
 🔮 Features
-	•	✨ Personality-based quiz with animated transitions
-	•	🐲 Custom dragon results by color and tail type
-	•	🎨 Visual result page using pre-generated dragon images
-	•	⚛️ Built with React + Vite
-	•	🎞️ Smooth UI interactions with Framer Motion
-	•	🧠 Trait-to-result logic using object mapping and frequency analysis
+
+- ✨ Personality-based quiz with animated transitions
+- 🐲 Custom dragon results by color and tail type
+- 🎨 Visual result page using pre-generated dragon images
+- ⚛️ Built with React + Vite
+- 🎞️ Smooth UI interactions with Framer Motion
+- 🧠 Trait-to-result logic using object mapping and frequency analysis
 
 🧱 Built With
-	•	React (with Hooks)
-	•	Vite (for fast builds and dev server)
-	•	Framer Motion (for animations)
-	•	CSS (custom styling)
-	•	JavaScript (logic-heavy trait handling)
+- React (with Hooks)
+- Vite (for fast builds and dev server)
+- Framer Motion (for animations)
+- CSS (custom styling)
+- JavaScript (logic-heavy trait handling)
 
 
 🚀 Getting Started
